@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 14:37:03 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:56:26 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -76,10 +76,6 @@ char	*ft_strupcase(char *str);
 char	*ft_strlowcase(char *str);
 char	*ft_lpad(char *str, size_t size, int c);
 char	*ft_rpad(char *str, size_t size, int c);
-
-
-/* Converter functions */
-char	*ft_ctos(int c);
 /* Basic output functions */
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);
@@ -90,8 +86,12 @@ void	ft_putstr(char *s);
 void	ft_putendl(char *s);
 void	ft_putnbr(int n);
 void	ft_puts(int n, ...);
-/* Basic number based functions */
+
+/* Converter functions */
+char	*ft_ctos(int c);
 int		ft_atoi(const char *str);
+/* Basic number based functions */
+
 size_t	ft_ndigits(long long int n);
 char	*ft_untoa_base(unsigned long long int nbr, char *result, char *base);
 char	*ft_ntoa_base(long long int nbr, char *result, char *base);
