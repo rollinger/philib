@@ -1,29 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstsize.c                                       :+:      :+:    :+:   */
+/*   ft_lstadd_back.c                                   :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/20 20:40:50 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/21 14:22:18 by prolling         ###   ########.fr       */
+/*   Created: 2021/05/21 18:09:38 by prolling          #+#    #+#             */
+/*   Updated: 2021/07/24 15:10:04 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
-* Counts the number of elements in a list. Returns lenght of list
+* Adds the element ’new’ at the end of the list. Returns nothing
+* Parameters:
+* #1. The address of a pointer to the first link of a list.
+* #2. The address of a pointer to the element to be added to the list.
 */
-int	ft_lstsize(t_list *lst)
+void	ft_lstadd_back(t_list **lst, t_list *new)
 {
-	size_t	len;
+	t_list	*last;
 
-	len = 0;
-	while (lst != NULL)
+	if (*lst != 0)
 	{
-		lst = lst->next;
-		++len;
+		last = ft_lstlast(*lst);
+		last->next = new;
 	}
-	return (len);
+	else
+		*lst = new;
+	return ;
 }

@@ -6,7 +6,7 @@
 #    By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/15 17:05:05 by prolling          #+#    #+#              #
-#    Updated: 2021/07/24 15:00:55 by prolling         ###   ########.fr        #
+#    Updated: 2021/07/24 15:11:19 by prolling         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -15,14 +15,15 @@ libmem = libmem/ft_*.c
 libstr = libstr/ft_*.c
 libout = libout/ft_*.c
 libconv = libconv/ft_*.c
-#libllist = #libllist/ft_*.c
+libnbr = libnbr/ft_*.c
+libllist = libllist/ft_*.c
 sources =
-sources_bonus = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
-	ft_lstadd_front.c ft_lstdelone.c ft_lstiter.c ft_lstclear.c ft_lstmap.c
-sources_own = ft_add_bonus.c ft_sub_bonus.c
+sources_bonus =
+sources_own =
 headers = libft.h
 
-OBJS		=	$(sources) $(libchar) $(libmem) $(libstr) $(libout) $(libconv)
+OBJS		=	$(sources) $(libchar) $(libmem) $(libstr) $(libout) $(libconv) \
+	$(libnbr) $(libllist)
 OBJS_BONUS	=	$(sources_bonus) #$(sources_bonus:.c=.o)
 OBJS_OWN	=	$(sources_own) #$(sources_own:.c=.o)
 

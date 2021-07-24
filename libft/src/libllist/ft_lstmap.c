@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/22 17:35:32 by prolling          #+#    #+#             */
-/*   Updated: 2021/06/18 12:34:21 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 15:10:37 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * Iterates the list ’lst’ and applies the function ’f’ to the content of each

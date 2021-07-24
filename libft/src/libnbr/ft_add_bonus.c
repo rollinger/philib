@@ -1,34 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ndigits_bonus.c                                 :+:      :+:    :+:   */
+/*   ft_add_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/13 12:37:24 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/13 12:39:12 by prolling         ###   ########.fr       */
+/*   Created: 2021/07/09 12:13:59 by prolling          #+#    #+#             */
+/*   Updated: 2021/07/24 15:08:12 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
-* Returns the number of digits of <n>. The parameter is of long long int.
+* Adds a variable number of integers up. returns an integer
 */
-size_t	ft_ndigits(long long int n)
+int	ft_add(int n, ...)
 {
-	size_t	x;
+	va_list	args;
+	int		result;
 
-	x = 0;
-	if (n < 0)
-	{
-		n *= -1;
-		++x;
-	}
-	while (n >= 10)
-	{
-		n /= 10;
-		++x;
-	}
-	return (++x);
+	result = 0;
+	va_start(args, n);
+	while (n--)
+		result += va_arg(args, int);
+	va_end(args);
+	return (result);
 }

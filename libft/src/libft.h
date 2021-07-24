@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 15:03:07 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 15:07:39 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -86,14 +86,8 @@ void	ft_putstr(char *s);
 void	ft_putendl(char *s);
 void	ft_putnbr(int n);
 void	ft_puts(int n, ...);
-
 /* Converter functions */
 int		ft_atoi(const char *str);
-
-
-/* Basic number based functions */
-
-size_t	ft_ndigits(long long int n);
 char	*ft_untoa_base(unsigned long long int nbr, char *result, char *base);
 char	*ft_ntoa_base(long long int nbr, char *result, char *base);
 char	*ft_itoa(long long int nbr);
@@ -104,6 +98,8 @@ char	*ft_itoo(long long int nbr);
 char	*ft_uitoo(unsigned long long int nbr);
 char	*ft_itob(long long int nbr);
 char	*ft_uitob(unsigned long long int nbr);
+/* Basic number based functions */
+size_t	ft_ndigits(long long int n);
 int		ft_add(int n, ...);
 int		ft_sub(int n, ...);
 /* Basic linked list based functions */

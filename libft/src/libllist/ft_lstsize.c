@@ -1,29 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_sub_bonus.c                                     :+:      :+:    :+:   */
+/*   ft_lstsize.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/09 12:13:59 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 14:30:00 by prolling         ###   ########.fr       */
+/*   Created: 2021/05/20 20:40:50 by prolling          #+#    #+#             */
+/*   Updated: 2021/07/24 15:10:43 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
-* Subtracts a variable number of integers down. returns an integer.
+* Counts the number of elements in a list. Returns lenght of list
 */
-int	ft_sub(int n, ...)
+int	ft_lstsize(t_list *lst)
 {
-	va_list	args;
-	int		result;
+	size_t	len;
 
-	result = 0;
-	va_start(args, n);
-	while (n--)
-		result -= va_arg(args, int);
-	va_end(args);
-	return (result);
+	len = 0;
+	while (lst != NULL)
+	{
+		lst = lst->next;
+		++len;
+	}
+	return (len);
 }

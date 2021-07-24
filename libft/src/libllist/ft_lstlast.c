@@ -1,26 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/21 18:08:09 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/21 19:40:51 by prolling         ###   ########.fr       */
+/*   Created: 2021/05/20 20:44:38 by prolling          #+#    #+#             */
+/*   Updated: 2021/07/24 15:10:34 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
-* Adds the element ’new’ at the beginning of the list. Returns nothing.
-* Parameters:
-* #1. The address of a pointer to the first link of a list.
-* #2. The address of a pointer to the element to be added to the list.
+* Returns the last element of the list.
 */
-void	ft_lstadd_front(t_list **lst, t_list *new)
+t_list	*ft_lstlast(t_list *lst)
 {
-	new->next = *lst;
-	*lst = new;
-	return ;
+	if (!lst)
+		return ((void *)0);
+	while (lst->next != NULL)
+		lst = lst->next;
+	return (lst);
 }

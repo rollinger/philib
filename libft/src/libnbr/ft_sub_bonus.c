@@ -1,30 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstiter.c                                       :+:      :+:    :+:   */
+/*   ft_sub_bonus.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/21 20:14:57 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/21 20:40:38 by prolling         ###   ########.fr       */
+/*   Created: 2021/07/09 12:13:59 by prolling          #+#    #+#             */
+/*   Updated: 2021/07/24 15:08:06 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
-* Iterates the list ’lst’ and applies the function ’f’ to the content of
-* each element.
-* #1. The adress of a pointer to an element.
-* #2. The adress of the function used to iterate on
-* the list.
+* Subtracts a variable number of integers down. returns an integer.
 */
-void	ft_lstiter(t_list *lst, void (*f)(void *))
+int	ft_sub(int n, ...)
 {
-	while (lst != NULL)
-	{
-		f(lst->content);
-		lst = lst->next;
-	}
-	return ;
+	va_list	args;
+	int		result;
+
+	result = 0;
+	va_start(args, n);
+	while (n--)
+		result -= va_arg(args, int);
+	va_end(args);
+	return (result);
 }

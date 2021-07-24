@@ -1,25 +1,34 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstlast.c                                       :+:      :+:    :+:   */
+/*   ft_ndigits_bonus.c                                 :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/05/20 20:44:38 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/26 14:44:45 by prolling         ###   ########.fr       */
+/*   Created: 2021/07/13 12:37:24 by prolling          #+#    #+#             */
+/*   Updated: 2021/07/24 15:08:12 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
-* Returns the last element of the list.
+* Returns the number of digits of <n>. The parameter is of long long int.
 */
-t_list	*ft_lstlast(t_list *lst)
+size_t	ft_ndigits(long long int n)
 {
-	if (!lst)
-		return ((void *)0);
-	while (lst->next != NULL)
-		lst = lst->next;
-	return (lst);
+	size_t	x;
+
+	x = 0;
+	if (n < 0)
+	{
+		n *= -1;
+		++x;
+	}
+	while (n >= 10)
+	{
+		n /= 10;
+		++x;
+	}
+	return (++x);
 }

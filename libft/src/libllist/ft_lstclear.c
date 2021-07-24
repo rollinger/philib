@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 19:45:28 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/26 15:23:36 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 15:10:17 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * Deletes and frees the given element and every
