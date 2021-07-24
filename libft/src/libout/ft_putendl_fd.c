@@ -1,23 +1,25 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_ctos_bonus.c                                    :+:      :+:    :+:   */
+/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/11 17:10:51 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/12 12:11:51 by prolling         ###   ########.fr       */
+/*   Created: 2021/05/19 08:53:59 by prolling          #+#    #+#             */
+/*   Updated: 2021/07/24 14:56:24 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
-char	*ft_ctos(int c)
+/*
+* Outputs the string c to given file descriptor, followed by a newline.
+*/
+void	ft_putendl_fd(char *s, int fd)
 {
-	char	*s;
-
-	s = (char *)ft_calloc(sizeof(char), 2);
-	if (s)
-		s[0] = c;
-	return (s);
+	if (!s)
+		return ;
+	ft_putstr_fd(s, fd);
+	ft_putchar_fd('\n', fd);
+	return ;
 }

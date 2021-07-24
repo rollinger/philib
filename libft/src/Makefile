@@ -6,7 +6,7 @@
 #    By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2021/05/15 17:05:05 by prolling          #+#    #+#              #
-#    Updated: 2021/07/24 14:57:10 by prolling         ###   ########.fr        #
+#    Updated: 2021/07/24 15:00:55 by prolling         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -14,17 +14,15 @@ libchar = libchar/ft_*.c
 libmem = libmem/ft_*.c
 libstr = libstr/ft_*.c
 libout = libout/ft_*.c
-libconv = #libconv/ft_*.c
-sources =  ft_atoi.c ft_itoa.c
+libconv = libconv/ft_*.c
+#libllist = #libllist/ft_*.c
+sources =
 sources_bonus = ft_lstnew.c ft_lstsize.c ft_lstlast.c ft_lstadd_back.c \
 	ft_lstadd_front.c ft_lstdelone.c ft_lstiter.c ft_lstclear.c ft_lstmap.c
-sources_own =
-	ft_add_bonus.c ft_sub_bonus.c \
-	ft_ctos_bonus.c ft_itoa_base_bonus.c ft_itox_bonus.c ft_itoo_bonus.c \
-	ft_itob_bonus.c ft_pad_bonus.c
+sources_own = ft_add_bonus.c ft_sub_bonus.c
 headers = libft.h
 
-OBJS		=	$(sources) $(libchar) $(libmem) $(libstr) $(libout)
+OBJS		=	$(sources) $(libchar) $(libmem) $(libstr) $(libout) $(libconv)
 OBJS_BONUS	=	$(sources_bonus) #$(sources_bonus:.c=.o)
 OBJS_OWN	=	$(sources_own) #$(sources_own:.c=.o)
 

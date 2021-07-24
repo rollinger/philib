@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/12 11:57:10 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/13 10:03:38 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 15:01:27 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * Takes a unsigned long long number and returns it as a string in the base

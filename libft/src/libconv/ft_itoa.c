@@ -1,37 +1,39 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_itoo_bonus.c                                    :+:      :+:    :+:   */
+/*   ft_itoa.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/07/13 09:49:24 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/13 10:02:43 by prolling         ###   ########.fr       */
+/*   Created: 2021/05/20 11:17:28 by prolling          #+#    #+#             */
+/*   Updated: 2021/07/24 15:01:24 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
-* Returns a long long number as a octal string. Returns string.
+* Returns a signed long long int as a decimal string. Handles negative numbers.
+* Returns a ptr to the allocated string.
 */
-char	*ft_itoo(long long int nbr)
+char	*ft_itoa(long long int nbr)
 {
 	char	*result;
 
 	result = (char *)ft_calloc(sizeof(char), NTOA_MAX_CHAR);
-	ft_ntoa_base(nbr, result, OCTALBASE);
+	ft_ntoa_base(nbr, result, DECIMALBASE);
 	return (result);
 }
 
 /*
-* Returns a unsiged long long int as a hexadecimal string. Returns string.
+* Returns a unsiged long long int as a decimal string. Returns a ptr to the
+* allocated string.
 */
-char	*ft_uitoo(unsigned long long int nbr)
+char	*ft_uitoa(unsigned long long int nbr)
 {
 	char	*result;
 
 	result = (char *)ft_calloc(sizeof(char), NTOA_MAX_CHAR);
-	ft_untoa_base(nbr, result, OCTALBASE);
+	ft_untoa_base(nbr, result, DECIMALBASE);
 	return (result);
 }

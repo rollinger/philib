@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 14:56:26 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 15:03:07 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -41,6 +41,7 @@ int		ft_isalnum(int c);
 int		ft_isprint(int c);
 int		ft_tolower(int c);
 int		ft_toupper(int c);
+char	*ft_ctos(int c);
 /* Basic memory based functions, malloc and swaps <libmem> */
 void	ft_bzero(void *s, size_t n);
 void	*ft_calloc(size_t nmemb, size_t size);
@@ -53,7 +54,6 @@ void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	ft_swapi(int *a, int *b);
 void	ft_swapc(char *a, char *b);
 void	ft_swapb(void *a, void *b);
-
 /* Basic string-based functions <libstr>*/
 size_t	ft_strlen(const char *s);
 size_t	ft_strclen(const char *s, char c);
@@ -88,8 +88,9 @@ void	ft_putnbr(int n);
 void	ft_puts(int n, ...);
 
 /* Converter functions */
-char	*ft_ctos(int c);
 int		ft_atoi(const char *str);
+
+
 /* Basic number based functions */
 
 size_t	ft_ndigits(long long int n);
