@@ -1,6 +1,6 @@
 # OVERVIEW
 PhiLib contains a number of libraries and projects I did during my Core Curriculum
-at 42 Wolfsburg for the C language.
+at 42 Wolfsburg for the C language. Please use for your own study only.
 
 # CONTENT
 ::philib
