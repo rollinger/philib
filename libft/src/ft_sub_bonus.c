@@ -6,14 +6,14 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/09 12:13:59 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/09 13:07:26 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:30:00 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
 /*
-* Subtract a variable number of integers up. returns an integer.
+* Subtracts a variable number of integers down. returns an integer.
 */
 int	ft_sub(int n, ...)
 {

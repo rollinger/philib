@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 16:20:05 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/25 09:54:08 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:17:03 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * The strrchr() function returns a pointer to the last occurrence of the

@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/19 17:17:44 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 09:29:48 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:39:30 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * Allocates (with malloc(3)) and returns a substring from the string ’s’.

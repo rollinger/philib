@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 10:11:09 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/26 13:05:54 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:17:05 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * Applies the function ’f’ to each character of the string ’s’ to create a

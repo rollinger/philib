@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 07:49:06 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 12:00:26 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:23:09 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * Swaps the two integer values with each other in place. Returns nothing.
@@ -40,10 +40,10 @@ void	ft_swapc(char *a, char *b)
 
 void	ft_swapb(void *a, void *b)
 {
-	void	buf;
+	unsigned char	buf;
 
-	buf = *b;
-	*b = *a;
-	*a = buf;
+	buf = *(unsigned char *)b;
+	*(unsigned char *)b = *(unsigned char *)a;
+	*(unsigned char *)a = buf;
 	return ;
 }

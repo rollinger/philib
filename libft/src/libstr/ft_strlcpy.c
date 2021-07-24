@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 22:16:01 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/26 13:09:38 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:17:06 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * Strlcpy copies the src string into the dest buffer writing max size bytes and

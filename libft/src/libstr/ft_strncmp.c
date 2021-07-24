@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:11:46 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/26 15:25:10 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:16:42 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * The  strncmp() function compares the two strings s1 and s2 for only the first

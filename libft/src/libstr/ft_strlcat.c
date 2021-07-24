@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 22:06:01 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/26 15:24:45 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:17:07 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * The strlcat() function appends at most (dstsize-strlen(dst)-1) characters of

@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 21:50:59 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/26 16:27:39 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:17:04 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * man strstr - but str-n-str not found

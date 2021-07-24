@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 12:51:21 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:37:03 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -52,35 +52,34 @@ void	*ft_memchr(const void *s, int c, size_t n);
 void	*ft_memccpy(void *dest, const void *src, int c, size_t n);
 void	ft_swapi(int *a, int *b);
 void	ft_swapc(char *a, char *b);
-void	ft_swapb(char *a, char *b);
+void	ft_swapb(void *a, void *b);
 
 /* Basic string-based functions <libstr>*/
 size_t	ft_strlen(const char *s);
 size_t	ft_strclen(const char *s, char c);
 size_t	ft_strslen(const char *s, const char *nc);
-
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_strset(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcat(char *dest, char *src, size_t size);
 size_t	ft_strlcpy(char *dest, char *src, size_t size);
-
-char	*ft_ctos(int c);
-
-char	*ft_strset(const char *s1, const char *s2);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
-
+char	*ft_strjoin(char const *s1, char const *s2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_subpstr(char const *s, char const *start, char const *end);
-char	*ft_strjoin(char const *s1, char const *s2);
-char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strdup(const char *s);
+char	*ft_strtrim(char const *s1, char const *set);
 char	**ft_split(char const *s, char c);
 char	*ft_strmapi(char const *s, char (*f)(unsigned int, char));
 char	*ft_strupcase(char *str);
 char	*ft_strlowcase(char *str);
 char	*ft_lpad(char *str, size_t size, int c);
 char	*ft_rpad(char *str, size_t size, int c);
+
+
+/* Converter functions */
+char	*ft_ctos(int c);
 /* Basic output functions */
 void	ft_putstr_fd(char *s, int fd);
 void	ft_putchar_fd(char c, int fd);

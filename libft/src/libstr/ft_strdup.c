@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 22:55:57 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/25 09:42:05 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:17:08 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * The  strdup() function returns a pointer to a new string which is a duplicate

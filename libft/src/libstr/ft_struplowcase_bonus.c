@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/07/13 08:54:21 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/13 09:13:07 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:16:59 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 *

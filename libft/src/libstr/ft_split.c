@@ -6,11 +6,11 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/21 10:10:38 by prolling          #+#    #+#             */
-/*   Updated: 2021/05/28 06:56:45 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 14:39:16 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#include "../libft.h"
 
 /*
 * count blocks of words separated by c(s) returns n of blks found
