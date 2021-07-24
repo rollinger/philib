@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 12:04:56 by prolling         ###   ########.fr       */
+/*   Updated: 2021/07/24 12:51:21 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,7 +31,7 @@ typedef struct s_list
 }					t_list;
 
 /* Basic character based functions <libchar> */
-int		ft_isupper(int c);
+int		ft_isupper(int c); /* TestCase: ...*/
 int		ft_islower(int c);
 int		ft_isalpha(int c);
 int		ft_isdigit(int c);
@@ -58,14 +58,18 @@ void	ft_swapb(char *a, char *b);
 size_t	ft_strlen(const char *s);
 size_t	ft_strclen(const char *s, char c);
 size_t	ft_strslen(const char *s, const char *nc);
-char	*ft_ctos(int c);
+
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
-char	*ft_strset(const char *s1, const char *s2);
 int		ft_strncmp(const char *s1, const char *s2, size_t n);
-char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 size_t	ft_strlcat(char *dest, char *src, size_t size);
 size_t	ft_strlcpy(char *dest, char *src, size_t size);
+
+char	*ft_ctos(int c);
+
+char	*ft_strset(const char *s1, const char *s2);
+char	*ft_strnstr(const char *s1, const char *s2, size_t n);
+
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_subpstr(char const *s, char const *start, char const *end);
 char	*ft_strjoin(char const *s1, char const *s2);
