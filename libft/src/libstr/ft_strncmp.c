@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/14 17:11:46 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 14:16:42 by prolling         ###   ########.fr       */
+/*   Updated: 2021/08/22 13:12:07 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -23,19 +23,14 @@
 */
 int	ft_strncmp(const char *s1, const char *s2, size_t n)
 {
-	const unsigned char	*c1;
-	const unsigned char	*c2;
-
-	c1 = (const unsigned char *)s1;
-	c2 = (const unsigned char *)s2;
 	while (n)
 	{
-		if (*c1 != *c2)
-			return (*c1 - *c2);
-		if (!*c1 || !*c2)
+		if (*s1 != *s2)
+			return (*s1 - *s2);
+		if (!*s1 || !*s2)
 			break ;
-		c1++;
-		c2++;
+		s1++;
+		s2++;
 		n--;
 	}
 	return (0);

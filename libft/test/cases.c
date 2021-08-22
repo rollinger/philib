@@ -32,7 +32,9 @@ void	test_ft_strncmp(void **state)
 	const char *s2 = "Hello World?";
 
 	assert_int_equal(strncmp(s1, s2, 11), ft_strncmp(s1, s2, 11));
-	//assert_int_equal(strncmp(s1, s2, 12), ft_strncmp(s1, s2, 12));
+	assert_int_equal(ft_strncmp(s1, s2, 11), 0);
+	assert_int_equal(strncmp(s1, s2, 12), ft_strncmp(s1, s2, 12));
+	assert_int_not_equal(ft_strncmp(s1, s2, 12), 0);
 	(void) state; /* unused */
 	return ;
 }
