@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/08/22 20:51:55 by prolling         ###   ########.fr       */
+/*   Updated: 2021/08/22 22:40:06 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -103,6 +103,8 @@ char	*ft_uitob(unsigned long long int nbr);
 size_t	ft_ndigits(long long int n);
 int		ft_add(int n, ...);
 int		ft_sub(int n, ...);
+void	ft_divmod(int a, int b, int *div, int *mod);
+void	ft_inline_divmod(int *a, int *b);
 /* Basic linked list based functions */
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstnew(void *content);
