@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/08/22 22:42:58 by prolling         ###   ########.fr       */
+/*   Updated: 2021/08/22 22:45:58 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -106,6 +106,8 @@ int		ft_sub(int n, ...);
 void	ft_divmod(int a, int b, int *div, int *mod);
 void	ft_inline_divmod(int *a, int *b);
 int		ft_pwr(int nb, int power);
+int		ft_iterative_factorial(int nb);
+int		ft_recursive_factorial(int nb);
 /* Basic linked list based functions */
 int		ft_lstsize(t_list *lst);
 t_list	*ft_lstnew(void *content);
