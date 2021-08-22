@@ -8,7 +8,7 @@ void null_test_success(void **state)
 }
 
 /* ft_bzero Test Case */
-void test_ft_bzero(void **state)
+void	test_ft_bzero(void **state)
 {
 	void	*m1 = (void *)malloc(10);
 	void	*m2 = (void *)malloc(10);
@@ -22,6 +22,17 @@ void test_ft_bzero(void **state)
 	ft_bzero(m1, 10);
 	ft_bzero(m2, 10);
 	assert_memory_equal (m1, m2, 10);
+	(void) state; /* unused */
+	return ;
+}
+
+void	test_ft_strncmp(void **state)
+{
+	const char *s1 = "Hello World!";
+	const char *s2 = "Hello World?";
+
+	assert_int_equal(strncmp(s1, s2, 11), ft_strncmp(s1, s2, 11));
+	//assert_int_equal(strncmp(s1, s2, 12), ft_strncmp(s1, s2, 12));
 	(void) state; /* unused */
 	return ;
 }
