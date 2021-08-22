@@ -1,44 +1,29 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_pwr_bonus.c                                     :+:      :+:    :+:   */
+/*   ft_root.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2021/08/22 21:03:19 by prolling          #+#    #+#             */
-/*   Updated: 2021/08/22 22:55:38 by prolling         ###   ########.fr       */
+/*   Created: 2021/08/22 22:55:22 by prolling          #+#    #+#             */
+/*   Updated: 2021/08/22 22:55:42 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "../libft.h"
 
-int	ft_iterative_power(int nb, int power)
+int	ft_sqrt(int nb)
 {
-	int	int_p;
+	int	int_i;
+	int	int_ret;
 
-	if (power < 0)
-		return (0);
-	if (power == 0)
-		return (1);
-	int_p = nb;
-	while (power > 1)
+	int_ret = 0;
+	int_i = 1;
+	while (int_i <= 47000)
 	{
-		int_p = int_p * nb;
-		power--;
+		if ((int_i * int_i) == nb)
+			return (int_i);
+		int_i++;
 	}
-	return (int_p);
-}
-
-int	ft_recursive_power(int nb, int power)
-{
-	int	int_p;
-
-	if (power < 0)
-		return (0);
-	if (power == 0)
-		return (1);
-	int_p = nb;
-	if (power > 1)
-		int_p = nb * ft_recursive_power(nb, --power);
-	return (int_p);
+	return (int_ret);
 }

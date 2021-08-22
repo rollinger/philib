@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/08/22 22:51:51 by prolling         ###   ########.fr       */
+/*   Updated: 2021/08/22 22:54:12 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -107,6 +107,7 @@ void	ft_divmod(int a, int b, int *div, int *mod);
 void	ft_inline_divmod(int *a, int *b);
 int		ft_iterative_power(int nb, int power);
 int		ft_recursive_power(int nb, int power);
+int		ft_sqrt(int nb);
 int		ft_iterative_factorial(int nb);
 int		ft_recursive_factorial(int nb);
 int		ft_fibonacci(int index);
