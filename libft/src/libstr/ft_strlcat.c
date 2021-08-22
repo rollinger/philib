@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/18 22:06:01 by prolling          #+#    #+#             */
-/*   Updated: 2021/07/24 14:17:07 by prolling         ###   ########.fr       */
+/*   Updated: 2021/08/22 12:21:46 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -39,8 +39,7 @@ size_t	ft_strlcat(char *dest, char *src, size_t size)
 
 	dest_len = ft_strlen(dest);
 	src_len = ft_strlen(src);
-	dest += dest_len;
 	if (size >= dest_len)
-		ft_strlcpy(dest, src, size - dest_len);
+		ft_strlcpy(dest + dest_len, src, size - dest_len);
 	return (min(size, dest_len) + src_len);
 }

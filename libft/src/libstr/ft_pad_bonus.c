@@ -37,7 +37,9 @@ char	*ft_seqc(size_t n, int c)
 	return (seq);
 }
 
-/***/
+/*
+* Pads a string <str> to the left with <size> repetitions of <c>
+*/
 char	*ft_lpad(char *str, size_t size, int c)
 {
 	char	*padding;
@@ -48,7 +50,9 @@ char	*ft_lpad(char *str, size_t size, int c)
 	return (NULL);
 }
 
-/***/
+/*
+* Pads a string <str> to the right with <size> repetitions of <c>
+*/
 char	*ft_rpad(char *str, size_t size, int c)
 {
 	char	*padding;
