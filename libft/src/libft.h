@@ -6,7 +6,7 @@
 /*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/08/22 22:54:12 by prolling         ###   ########.fr       */
+/*   Updated: 2021/08/26 10:17:05 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -101,6 +101,7 @@ char	*ft_itob(long long int nbr);
 char	*ft_uitob(unsigned long long int nbr);
 /* Basic number based functions */
 size_t	ft_ndigits(long long int n);
+long long int  ft_abs(long long int nbr)
 int		ft_add(int n, ...);
 int		ft_sub(int n, ...);
 void	ft_divmod(int a, int b, int *div, int *mod);
