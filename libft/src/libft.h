@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   libft.h                                            :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: prolling <prolling@student.42wolfsburg.de> +#+  +:+       +#+        */
+/*   By: prolling <prolling@student.42wolfsburg.    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2021/05/13 10:19:18 by prolling          #+#    #+#             */
-/*   Updated: 2021/08/26 10:17:05 by prolling         ###   ########.fr       */
+/*   Updated: 2021/08/27 15:37:58 by prolling         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -66,6 +66,7 @@ size_t	ft_strlcat(char *dest, char *src, size_t size);
 size_t	ft_strlcpy(char *dest, char *src, size_t size);
 char	*ft_strnstr(const char *s1, const char *s2, size_t n);
 char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strfjoin(char *str1, char *str2);
 char	*ft_substr(char const *s, unsigned int start, size_t len);
 char	*ft_subpstr(char const *s, char const *start, char const *end);
 char	*ft_strdup(const char *s);
